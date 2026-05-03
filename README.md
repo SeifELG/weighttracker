@@ -2,6 +2,8 @@
 
 A small local-first PWA for logging weight measurements quickly from a phone or laptop.
 
+![Weight Tracker mobile screenshot](docs/screenshot.png)
+
 ## Features
 
 - Quick weight entry, defaulting to kilograms
