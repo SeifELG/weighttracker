@@ -1,10 +1,12 @@
 const BASE_PATH = '/weighttracker/';
-const CACHE_NAME = 'weight-tracker-v2';
+const CACHE_NAME = 'weight-tracker-v3';
 const APP_SHELL = [
   BASE_PATH,
   `${BASE_PATH}index.html`,
   `${BASE_PATH}manifest.webmanifest`,
   `${BASE_PATH}icons/icon.svg`,
+  `${BASE_PATH}icons/icon-192.png`,
+  `${BASE_PATH}icons/icon-512.png`,
 ];
 
 self.addEventListener('install', (event) => {
