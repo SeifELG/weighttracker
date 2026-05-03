@@ -1,6 +1,6 @@
 {
   "name": "Weight Tracker",
-  "short_name": "Weight",
+  "short_name": "Weight Tracker",
   "description": "A fast local-first daily weight log.",
   "start_url": "/weighttracker/",
   "scope": "/weighttracker/",
