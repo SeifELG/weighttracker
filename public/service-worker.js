@@ -1,9 +1,10 @@
-const CACHE_NAME = 'weight-tracker-v1';
+const BASE_PATH = '/weighttracker/';
+const CACHE_NAME = 'weight-tracker-v2';
 const APP_SHELL = [
-  '/',
-  '/index.html',
-  '/manifest.webmanifest',
-  '/icons/icon.svg',
+  BASE_PATH,
+  `${BASE_PATH}index.html`,
+  `${BASE_PATH}manifest.webmanifest`,
+  `${BASE_PATH}icons/icon.svg`,
 ];
 
 self.addEventListener('install', (event) => {
@@ -41,7 +42,7 @@ self.addEventListener('fetch', (event) => {
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
           return response;
         })
-        .catch(() => caches.match('/index.html'));
+        .catch(() => caches.match(`${BASE_PATH}index.html`));
     })
   );
 });
